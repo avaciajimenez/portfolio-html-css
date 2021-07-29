@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+
+
+nav {
+    display: flex;
+    -ms-flex-align: right;
+    background-color: lavender;
+  }
+  nav header {
+    color: black;
+    padding-inline-end: 15%;
+    text-decoration: none;
+    text-align: wrap;
+    font-size: xx-large;
+  }
+  
+  nav a {
+    color: #13293d;
+    padding: 20px;
+    text-decoration: none;
+    text-align: end;
+  }
+
+  .page-section {
+    display:flex
+  }
+
+  .title {
+    flex: 0 0 20%;
+  }
+
+  .content {
+    flex: 0 0 77%;
+  }
+
+  .portfolio {
+    display:flex
+  }
+
+  #camera {
+    flex-basis: 400px;
+    min-height: 100px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+  }
+
+  #LED {
+    min-height: 100px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+  }
+
+  #cal {
+    min-height: 100px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+  }
+
+  #puzzle {
+    min-height: 100px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+  }
+
+  #run {
+    min-height: 100px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+  }
