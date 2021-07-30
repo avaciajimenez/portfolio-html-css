@@ -5,6 +5,7 @@
   body {
     font-family: Arial;
     margin: 0;
+    background-color: lavender;
   }
 
 
@@ -27,6 +28,22 @@ nav {
     padding: 20px;
     text-decoration: none;
     text-align: end;
+    text-decoration: underline;
+  }
+
+  header {
+    background-color: blueviolet;
+  }
+  .bg-image {
+    flex-basis: 80px;
+    min-height: 160px;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/31325602/thumb/1.jpg");
+  }
+
+  img {
+    max-height: 40%;
+    max-width: 40%;
+    margin-top: 6%;
   }
 
   .page-section {
@@ -44,29 +61,79 @@ nav {
   .portfolio {
     display:flex
   }
+  
 
   #camera {
-    flex-basis: 400px;
-    min-height: 100px;
-    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+    flex-basis: 80px;
+    min-height: 350px;
+    margin-bottom: 2%;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/9878822/thumb/1.jpg");
+  }
+
+  #camera:hover {
+    color: lightblue;
+  }
+
+  #LED:hover {
+    color: lightblue;
+  }
+
+  #cal:hover {
+    color: lightblue;
   }
 
   #LED {
-    min-height: 100px;
-    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+    min-height: 200px;
+    margin-bottom: 2%;
+    background-image: url("https://onewayeventproductions.com/wp-content/uploads/2020/02/AdobeStock_289192813.jpeg");
   }
 
   #cal {
-    min-height: 100px;
-    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+    min-height: 200px;
+    background-image: url("https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2015/02/thumb_720_450_1411_f.jpg");
   }
 
-  #puzzle {
-    min-height: 100px;
-    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+  .subtitle {
+    background-color: blueviolet;
+    position: absolute;
+    margin-top: 80px;
   }
 
-  #run {
-    min-height: 100px;
-    background-image: url("https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg");
+  ul {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
   }
+
+  li {
+    list-style: none;
+    display: right;
+    /* width: calc(100% / 3); */
+    height: 120px;
+    text-align: center;
+  }
+
+  .resume-header {
+    display:flex;
+    flex-direction: row;
+    padding-left: 220px;
+    min-width: 80%;
+  }
+  .column.side {
+    width: 25%;
+  }
+
+  #contact-info {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    text-decoration: underline; 
+  }
+
+footer { 
+  background-color: blueviolet;
+  text-align: center;
+  padding: 1%;  
+}
+
