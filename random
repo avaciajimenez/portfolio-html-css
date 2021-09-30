@@ -1,0 +1,83 @@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+
+    <!-- POPUP MODALS -->
+    <div class="modal" id="about">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p> Are you tired of scrolling through various sites and searches just to find one movie? Well you came to the right place,
+            here you can search for a movie or show with out any hassle. You will be directed straight to the titles assosiated with your chioce, as well as 
+            the year, genre, ect. Created in 2021 by COOL KIDS INC.</p>
+        </div>
+        <button class="modal-close is-large button" aria-label="close" style="background-color: tomato;"></button>
+      </div>
+
+    <div class="modal" id="profile">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio cupiditate excepturi saepe provident. Hic optio voluptatibus aperiam porro ut, consequatur officiis quasi excepturi repellendus, aspernatur sint rem beatae possimus architecto.</p>
+        </div>
+        <button class="modal-close is-large button" aria-label="close" style="background-color: tomato;">text</button>
+      </div>
+
+    <div class="modal" id="price">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <ul class='subscription'>
+                <li><a href='#'> One time search - $2.99</a></li>
+                <li><a href='#'> Individual (1 Month) - $9.99</a></li> 
+                <li><a href="#"> Family (1 Month) - $14.99</a></li> 
+                <li><a href="#"> Individual (1 Year) - $89.99</a></li>
+                <li><a href="#"> Student (1 Month) - $4.99</a></li>
+            </ul>
+            <p>Inital sign up allows for ONE week free trial. All reoccurring subscriptions include unlimited search and stream. Family plan of no more than FIVE. </p>
+        </div>
+        <button class="modal-close is-large button" aria-label="close" style="background-color: tomato;"></button>
+      </div>
+
+      <div class="modal" id="contact">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          Any other Bulma elements you want
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio cupiditate excepturi saepe provident. Hic optio voluptatibus aperiam porro ut, consequatur officiis quasi excepturi repellendus, aspernatur sint rem beatae possimus architecto.</p>
+        </div>
+        <button class="modal-close is-large button" aria-label="close" style="background-color: tomato;"></button>
+      </div>
+
+
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#" id="aboutBtn">About us</a></li>
+                                    <li><a href="#" id="profileBtn">My profile</a></li>
+                                    <li><a href="#" id="pricingBtn">Pricing plans</a></li>
+                                    <li><a href="#" id="contactsBtn">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+in Java script.js
+
+var aboutUs = document.getElementById('aboutBtn');
+var myProfile = document.getElementById('profileBtn');
+var pricingPlan = document.getElementById('pricingBtn');
+var contactMe = document.getElementById('contactsBtn');
+
+
+aboutUs.addEventListener('click',function(){
+  $("#about").addClass("is-active");
+})
+
+myProfile.addEventListener('click',function () {
+$("#profile").addClass("is-active");
+})
+
+pricingPlan.addEventListener('click',function () {
+  $("#price").addClass("is-active");
+  })
+  
+contactMe.addEventListener('click',function () {
+    $("#contact").addClass("is-active");
+    })
