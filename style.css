@@ -5,43 +5,50 @@
   body {
     font-family: Arial;
     margin: 0;
-    background-color: lavender;
+    /* background-color: lavender; */
+    background-image: linear-gradient( to left, #bf53ff, #df70ff, #fe8dff, #ffaaff, #ffc7ff, #ffaaff,#fe8dff, #df70ff, #bf53ff );
+
   }
 
 
 
 nav {
     display: flex;
-    -ms-flex-align: right;
-    background-color: lightblue;
+    /* -ms-flex-align: right; */
+    /* background-color: lightblue; */
   }
   nav header {
     color: black;
-    padding-inline-end: 15%;
+    /* padding-inline-end: 15%; */
     text-decoration: none;
-    text-align: wrap;
-    font-size: xx-large;
+    /* text-align: wrap; */
+    font-size: larger;
+  }
+
+  nav h1 {
+    text-align: right;
+    display: grid;
+    font-size: medium;
+    margin-left: 160px;
   }
   
   nav a {
     color: #13293d;
-    padding: 20px;
+    /* padding: 20px; */
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
     /* margin-left: 100px; */
-    text-decoration: underline;
-    background-color: lightblue;
+    /* text-decoration: underline; */
+    /* background-color: lightblue; */
   }
 
-  header {
-    background-color: lightblue;
-  }
+  
 
-  .animation-area {
+  /* .animation-area {
     background: linear-gradient(to left, #8942a8, #ba382f);
     width: 100%;
     height: 100vh;
-  }
+  } */
 
   /* .box-area {
     position: absolute;
@@ -63,9 +70,10 @@ nav {
   } */
   
   img {
-    max-height: 40%;
+    /* max-height: 40%;
     max-width: 40%;
-    margin-top: 6%;
+    margin-top: 6%; */
+    display: none;
   }
 
   .page-section {
@@ -76,8 +84,19 @@ nav {
     flex: 0 0 20%;
   }
 
+  p {
+    font-size: small;
+    display: flex;
+    margin-left: 10px;
+  }
+  h3{
+    display: grid;
+    font-size: smaller;
+  }
+
   .content {
-    flex: 0 0 77%;
+    /* flex: 0 0 77%; */
+    margin-left: 60px;
   }
 
   .portfolio {
@@ -134,9 +153,14 @@ nav {
   }
 
   .subtitle {
-    background-color: lightblue;
-    position: absolute;
-    margin-top: 100px;
+    background-image: url("./images/PasswordGeneratorSS.png");
+    /* position: absolute;
+    margin-top: 100px; */
+    color: chartreuse;
+  }
+
+  .can {
+    color:chartreuse;
   }
 
   ul {
@@ -173,8 +197,29 @@ nav {
   }
 
 footer { 
-  background-color: lightblue;
+  /* background-color: lightblue; */
   text-align: center;
   padding: 1%;  
 }
 
+@media screen and (min-width: 700px) {
+  * {
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    nav header {
+      font-size: xx-large;
+    }
+
+    nav h1{
+      display: inline-block;
+      justify-content:space-evenly;
+      font-size: xx-large;
+      margin-left: 600px;
+
+  }
