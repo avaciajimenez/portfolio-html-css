@@ -110,10 +110,11 @@ nav {
   #camera {
     flex-basis: 80px;
     min-height: 350px;
-    margin-bottom: 2%;
-    background-image: url("./images/CodeQuizSS.png");
-    background-size: 600px 600px;
+    /* margin-bottom: 2%; */
+    background-image: url("./images/CodeQuizSS.jpeg");
     background-repeat: no-repeat;
+    background-size: 400px 200px;
+
   }
 
   a:hover {
@@ -132,12 +133,18 @@ nav {
     color: red;
   }
 
+  h2{
+    background-color: cornsilk;
+    background-size: 50px, 50px;
+    background-repeat: no-repeat;
+  }
+
   #LED {
     flex-basis: 80px;
     min-height: 350px;
-    margin-bottom: 2%;
-    background-image: url("./images/PasswordGeneratorSS.png");
-    background-size: 600px 650px;
+    /* margin-bottom: 2%; */
+    background-image: url("./images/PasswordGenSS.jpeg");
+    background-size: 400px 200px;
     background-repeat: no-repeat;
 
   }
@@ -145,9 +152,9 @@ nav {
   #cal {
     flex-basis: 80px;
     min-height: 350px;
-    margin-bottom: 2%;
-    background-image: url("./images/Project1SS.png");
-    background-size: 600px 600px;
+    /* margin-bottom: 2%; */
+    background-image: url("./images/Project1SS.jpeg");
+    background-size: 400px 200px;
     background-repeat: no-repeat;
 
   }
@@ -156,11 +163,12 @@ nav {
     background-image: url("./images/PasswordGeneratorSS.png");
     /* position: absolute;
     margin-top: 100px; */
-    color: chartreuse;
+    color: black;
   }
 
   .can {
-    color:chartreuse;
+    color:black;
+    background-color: cornsilk;
   }
 
   ul {
