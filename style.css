@@ -70,10 +70,9 @@ nav {
   } */
   
   img {
-    /* max-height: 40%;
-    max-width: 40%;
-    margin-top: 6%; */
-    display: none;
+    visibility: hidden;
+    max-width: 1px;
+    max-width: 1px;
   }
 
   .page-section {
@@ -229,5 +228,56 @@ footer {
       justify-content:space-evenly;
       font-size: xx-large;
       margin-left: 600px;
+    }
 
+    .image {
+      max-height: 40%;
+      max-width: 40%;
+      margin-top: 6%;
+      visibility: inherit;
+    }
+  
+    h3{
+      display: grid;
+      font-size: larger;
+    }
+  
+    #camera {
+      background-size: 600px 600px;
+
+      background-image: url("./images/CodeQuizSS.jpeg");
+      background-repeat: no-repeat;
+      /* min-width: 500px;
+      min-height: 500px; */
+  
+    }
+  
+    #LED {
+      background-size: 600px 600px;
+      background-image: url("./images/PasswordGenSS.jpeg");
+      background-repeat: no-repeat;
+      /* min-width: 500px;
+      min-height: 500px;
+ */
+    }
+
+    #cal {
+      background-size: 600px 600px;
+      background-image: url("./images/Project1SS.jpeg");
+      background-repeat: no-repeat;
+      /* min-width: 600px;
+      min: height 6px;00px;
+ */
+    }
+    .card {
+      min-height: 600px;
+      min-width: 600px;
+    }
+  
+    h2{
+      background-color: cornsilk;
+      background-size: 50px, 50px;
+      background-repeat: no-repeat;
+    }
+  
   }
